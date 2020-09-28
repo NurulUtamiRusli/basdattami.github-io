@@ -1,25 +1,20 @@
-    .jumbotron {
-        background-image: url(img/nrl\ \(1\).jpg);
-        background-size: cover;
-        height: 700px;
-        text-align: center;
-        margin-top: -120px;
-    }
-    
-    .jumbotron .display-4 {
-        color: white;
-        margin-top: 200px;
-    }
-    
-    .container .lead {
-        color: white;
-        font-size: 30px;
-    }
-    
-    #mainNav {
-        color: white;
-    }
-    
-    .nav-item {
-        color: white;
-    }
+a {
+    font-size: 20px;
+}
+
+.nav-item {
+    font-size: 30px;
+}
+
+.container .lead {
+    color: white;
+    font-size: 30px;
+}
+
+#mainNav {
+    color: white;
+}
+
+.nav-item {
+    color: white;
+}
