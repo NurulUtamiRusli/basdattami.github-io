@@ -15,7 +15,7 @@ h2 {
 }
 
 h4 {
-    color: maroon;
+    color: #00587a;
 }
 
 img {
@@ -26,4 +26,9 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     text-align: justify;
+}
+
+.navbar {
+    background-color: rgb(32, 77, 114);
+    color: white;
 }

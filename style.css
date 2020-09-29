@@ -1,9 +1,22 @@
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    color: #00587a;
+    font-weight: bold;
+}
+
 a {
     font-size: 20px;
 }
 
 .nav-item {
     font-size: 30px;
+}
+
+.navbar {
+    background-color: #e7e7de;
 }
 
 .container .lead {
@@ -24,10 +37,12 @@ p {
     text-align: justify;
     font-size: 100px;
     text-align: center;
+    color: #00587a;
 }
 
 .tulis {
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 50px;
+    color: #0d7377;
 }

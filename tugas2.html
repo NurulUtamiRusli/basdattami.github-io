@@ -9,7 +9,7 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top " id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav">
         <div class="container">
             <a>Nurul Utami Rusli - D121181004</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link js-scroll-trigger text-black" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll-trigger text-white" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas1.html">Tugas 1 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll-trigger text-white" href="tugas1.html">Tugas 1 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas2.html">Tugas 2</a>
+                        <a class="nav-link js-scroll-trigger text-white" href="tugas2.html">Tugas 2</a>
                     </li>
                 </ul>
             </div>
@@ -36,8 +36,8 @@
     <p>MySQL adalah sebuah perangkat lunak sistem manajemen basis data SQL (bahasa Inggris: database management system) atau DBMS yang multialur, multipengguna, dengan sekitar 6 juta instalasi di seluruh dunia. MySQL AB membuat MySQL tersedia sebagai perangkat
         lunak gratis di bawah lisensi GNU General Public License (GPL), tetapi mereka juga menjual di bawah lisensi komersial untuk kasus-kasus di mana penggunaannya tidak cocok dengan penggunaan GPL. </p>
     <p>
-        MySQL adalah merupakan implementasi dari sistem manajemen basis data relasional (RDBMS) yang didistribusikan secara gratis di bawah lisensi GPL (General Public License). Setiap pengguna dapat secara bebas menggunakan MySQL, tetapi dengan batasan perangkat
-        lunak tersebut tidak boleh dijadikan produk turunan yang bersifat komersial. MySQL sebenarnya merupakan turunan salah satu konsep utama dalam basisdata yang telah ada sebelumnya; SQL (Structured Query Language). SQL adalah sebuah konsep pengoperasian
+        MySQL merupakan implementasi dari sistem manajemen basis data relasional (RDBMS) yang didistribusikan secara gratis di bawah lisensi GPL (General Public License). Setiap pengguna dapat secara bebas menggunakan MySQL, tetapi dengan batasan perangkat lunak
+        tersebut tidak boleh dijadikan produk turunan yang bersifat komersial. MySQL sebenarnya merupakan turunan salah satu konsep utama dalam basisdata yang telah ada sebelumnya; SQL (Structured Query Language). SQL adalah sebuah konsep pengoperasian
         basisdata, terutama untuk pemilihan atau seleksi dan pemasukan data, yang memungkinkan pengoperasian data dikerjakan dengan mudah secara otomatis.
     </p>
     <p>
@@ -48,20 +48,42 @@
         modus non-transaksional.
     </p>
     <p>
-        contoh penerapan MySQL
+        Contoh penerapan MySQL
     </p>
-    <br> <img src="img/MYSQL.png">
-    <br> keterangan
+    <br> <img src="img/MYSQL.png"><br><br>
     <p>
-        1. Id, menandakan nomor urut select query seperti pada mahasiswa memiliki id 1 dan penerima_beasiswa memiliki id 2. <br> 2. Select_type, menandakan menunjukkan tipe dari statement yang digunakan, seperti contoh pada tabel mahasiswa menggunakan
-        primary sehingga akan melakukan pencarian yang dimulai dari bagian terluar query utama, sedangkan pada tabel penerima_beasiswa menggunakan materialized sehingga hasil dari select suatu subquery akan disimpan dalam bentuk tabel sementara dan hanya
-        dapat dieksekusi sekali. <br> 3. Table, pada kolom table berarti query yang dimasukkan yaitu query dari colom table dan colom penerima_beasiswa <br> 4. Type, bagaimana suatu tabel dapat tergabung, pada tabel mahasiswa melakukan pemindaian lengkap,
-        sedangkan pada tabel penerima_beasiswa melakukan pemindaian oleh indeks suatu table. <br> 5. Possible_keys, kunci yang dapat dipakai, pada tabel mahasiswa tidak membutuhkan kunci sedangkan pada tabel penerima_beasiswa membutuhkan primary key dalam
-        menemukan mahasiswa yang tidak menerima beasiswa. <br> 6. Key, kunci yang telah digunakan, dapat dilihat pada tabel mahasiswa tidak menggunakan kunci apapun dalam proses eksekusi sedangkan pada tabel penerima_beasiswa menggunakan kunci utama.
-        <br> 7. Key_len, panjang dari kunci yang digunakan. <br> 8. Ref, kolom yang dibandingkan dengan index. <br> 9. Rows, jumlah baris yang dicari, yang dimana kedua tabel tersebut memiliki 3 baris yang akan dieksekusi, sehingga banyaknya baris yang
-        dieksekusi akan mempengaruhi lambat tidaknya efisiensi kerja. <br> 10. Extra, seperti biasa extra merujuk pada informasi tambahan dari bagaimana menyelesaikan tiap query, yang dimana hanya pada tabel mahasiswa yang memiliki extra yakni ‘using
-        where’ dalam menentukan kondisi baris tersebut dan pada tabel penerima_beasiswa memiliki extra ‘using index’ dalam menggunakan informasi dari pohon indeks tunggal tanpa perlu membaca ulang baris sebenarnya.
-        </br>
+        keterangan:
+    </p>
+    <p>
+        <li>
+            Id, menandakan nomor urut select query
+        </li>
+        <li>
+            Select_type, menandakan menunjukkan tipe dari statement yang digunakan.
+        </li>
+        <li>Table, gabungan dari bebrapa query</li>
+        <li>
+            Type, bagaimana suatu tabel dapat tergabung.
+        </li>
+        <li>
+            Possible_keys, kunci yang dapat dipakai.
+        </li>
+        <li>
+            Key, kunci yang telah digunakan.
+        </li>
+        <li>
+            Key_len, panjang dari kunci yang digunakan.
+        </li>
+        <li>
+            Ref, kolom yang dibandingkan dengan index.
+        </li>
+        <li>
+            Rows, jumlah baris yang dicari.
+        </li>
+        <li>
+            Extra, seperti biasa extra merujuk pada informasi tambahan dari bagaimana menyelesaikan tiap query.
+        </li>
+    </p>
     </p>
 </body>
 
