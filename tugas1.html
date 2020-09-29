@@ -2,26 +2,19 @@
 
 <head>
     <title>Tugas Basdat II</title>
-    <style>
-        h3 {
-            text-align: center;
-        }
-        
-        body {
-            text-align: justify;
-            font-size: 110%;
-            text-indent: 45px;
-            margin-right: 100px;
-            margin-left: 100px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="tugas1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <h4>prinsip kerja pemrosesan query dalam basis data</h4>
-    <h4>Apa itu Query?</h4>
+    <h3>Prinsip Kerja Pemrosesan Query dalam Basis Data</h3>
+    <hr>
+    <h4>
+        Apa itu Query?
+    </h4>
     <p>
-        sebelum membahasa lebih jauh, maka sebaiknya kita bahas apengertian dari query itu sendiri. Ketika diterjemahkan dari bahasa Inggris ke bahasa Indonesia, kata query mengacu pada permintaan akan informasi. Lalu, apa itu query di bahasa pemrograman komputer?
+        Sebelum membahasa lebih jauh, maka sebaiknya kita bahas apa pengertian dari query itu sendiri. Ketika diterjemahkan dari bahasa Inggris ke bahasa Indonesia, kata query mengacu pada permintaan akan informasi. Lalu, apa itu query di bahasa pemrograman komputer?
         Pada dasarnya, pengertian query dalam bahasa Inggris sehari-hari dan bahasa pemrograman komputer memiliki arti yang sama – kecuali di komputer, query meliputi informasi yang diterima atau diambil dari database. Bahasa pemrograman ini berguna untuk
         memanipulasi data – menambah, menghapus, dan mengubah data.
     </p>
@@ -30,11 +23,11 @@
     </p>
     <p> Standar manajemen database adalah Structure Query Language (SQL). Satu hal yang harus Anda ingat, SQL berbeda dari MySQL: SQL merupakan bahasa query, sedangkan MySQL adalah software yang menggunakan bahasa tersebut. SQL memang dikenal sebagai software
         database yang paling banyak digunakan. Namun, SQL tidak menjadi satu-satunya pilihan software. AQL, Datalog, dan DMX adalah contoh software database yang bisa Anda gunakan. </p>
-    <h4>bagaimana mengukur biaya sebuah query</h4>
+    <h4>Bagaimana Mengukur Biaya sebuah Query</h4>
     <p>Biaya evaluasi kueri dapat diukur dari segi sejumlah sumber daya yang berbeda, termasuk akses disk, waktu CPU untuk menjalankan kueri, dan, dalam sistem database paralel dan terdistribusi, dan biaya komunikasi. Untuk database besar yang berada pada
         disk magnetik, biaya I / O untuk mengakses data dari disk biasanya mendominasi biaya lainnya. Namun, sebagian besar data organisasi saat ini dapat disimpan pada solid-state drive (SSD) dalam perencana biaya. Dengan data residen dalam memori atau
         pada SSD, biaya I / O tidak mendominasi keseluruhan biaya, dan kita harus menyertakan biaya CPU saat menghitung biaya evaluasi kueri.</p>
-    <h4>bagaimana sebuah sistem database mengevaluasi sebuah ekspresi dan multiple ekspresi</h4>
+    <h4>Bagaimana sebuah Sistem Database Mengevaluasi sebuah Ekspresi dan Multiple Ekspresi</h4>
     <p>
         Sekarang kita pertimbangkan cara mengevaluasi ekspresi yang berisi beberapa operasi. Jelas cara untuk mengevaluasi ekspresi adalah dengan mengevaluasi satu operasi pada satu waktu, dalam urutan yang sesuai. Hasil setiap evaluasi diwujudkan dalam hubungan
         sementara untuk penggunaan selanjutnya. Kerugian dari pendekatan ini adalah kebutuhan untuk membangun hubungan sementara, yang (kecuali jika kecil) harus ditulis ke disk. Sebuah alternatif Pendekatannya adalah mengevaluasi beberapa operasi secara
@@ -49,11 +42,8 @@
     <p>B. Pipelining </p>
     <p>
         evaluasi ini dapat meningkatkan efisiensi kueri dengan mengurangi jumlah file sementara yang diproduksi. pengurangan ini dicapai dengan menggabungkan beberapa operasi relasional ke dalam operasi Pipelining, di mana hasil dari satu operasi diteruskan ke
-        operasi berikutnya di dalam pipa.
-    </p>
-    <p>
-        Kita dapat mengimplementasikan pipeline dengan membangun satu operasi kompleks yang membatasi operasi. Meskipun pendekatan ini mungkin layak Untuk beberapa situasi yang sering terjadi, sebaiknya gunakan kembali kode secara umum untuk operasi individu
-        dalam pembangunan pipa.
+        operasi berikutnya di dalam pipa. Kita dapat mengimplementasikan pipeline dengan membangun satu operasi kompleks yang membatasi operasi. Meskipun pendekatan ini mungkin layak Untuk beberapa situasi yang sering terjadi, sebaiknya gunakan kembali
+        kode secara umum untuk operasi individu dalam pembangunan pipa.
     </p>
     <p>
         Membuat pipeline operasi dapat memberikan dua manfaat:
